@@ -1,0 +1,28 @@
+{
+	"name": "todo-with-auth-api",
+	"version": "1.0.0",
+	"description": "Simple todo API with JWT-Auth",
+	"main": "server.js",
+	"scripts": {
+		"server": "nodemon ./server.js",
+		"client": "cd client && npm start",
+		"dev": "concurrently \"npm run server\" \"npm run client\""
+	},
+	"keywords": [],
+	"author": "Stepanenko Artem <stepanentem@gmail.com>",
+	"license": "ISC",
+	"dependencies": {
+		"bcryptjs": "^2.4.3",
+		"concurrently": "^5.3.0",
+		"cors": "^2.8.5",
+		"express": "^4.17.1",
+		"is-empty": "^1.2.0",
+		"jsonwebtoken": "^8.5.1",
+		"jwt-decode": "^3.0.0",
+		"mongoose": "^5.10.7",
+		"nodemon": "^2.0.4",
+		"passport": "^0.4.1",
+		"passport-jwt": "^4.0.0",
+		"validator": "^13.1.17"
+	}
+}
